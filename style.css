@@ -1,0 +1,116 @@
+@font-face {
+    font-family: 'FuturaLTPro';
+    src: url('./fonts/FuturaLTProBold.otf') format('otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'CustomFont';
+    src: url('./fonts/CustomFont-Bold.woff2') format('woff2'),
+         url('./fonts/CustomFont-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* Example usage */
+* {
+    font-family: 'FuturaLTPro', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.header{
+    padding: 10px 200px;
+}
+.header__nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__nav__logo{
+    width: 100px;
+}
+.header__nav__bandera{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+}
+.header__ul__container{
+    display: flex;
+    align-items: center;
+}
+.header__nav__ul{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    margin-right: 50px;
+}
+.header__nav__logo__container{
+    display: flex;
+    color: #009CDC;
+    align-items: center;
+    gap: 10px;
+    
+}
+.header__bandera__container{
+    display: flex;
+    text-align: right;
+    align-items: center;
+}
+.header__nav__logo__text--bandera{
+    margin-right: 20px;
+    color: #009CDC;
+}
+.bandera-text1{
+    color: #002164;
+}
+.header__nav__ul__li{
+   
+    font-size: 20px;
+    
+}
+.header__nav__ul__li a{
+    text-decoration: none;
+    color: #002164;
+    transition: 0.3s;
+}
+.header__nav__ul__li a:hover{
+    text-decoration: none;
+    color: #0036a1;
+    transition: 0.3s;
+}
+.presentation{
+    height: 75vh;
+   
+    position: relative;
+}
+.presentation__video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+}
+.presentation__title{
+    background-color: #002164;
+    z-index: 100;
+    height: 100px;
+    width: 40vw;
+    display: flex;
+    justify-self: flex-end;
+    padding: 30px;
+    flex-direction: column;
+}
+.presentation__title__text{
+    color: white;
+    font-size: 50px;
+    font-family: 'CustomFont', sans-serif;
+    font-weight: bold;
+}
+.presentation__title__subtitle{
+    color: white;
+    font-size: 20px;
+    font-family: 'CustomFont', sans-serif;
+    
+    margin-top: 10px;
+}
